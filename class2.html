@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head><title>checkbox and radio buttons</title>
+
+    </head>
+    <body>
+        <!--input tag => textbox, password,number,reset,submit, email,image,url,date,time ,week,month,color,checkbox,radio, file -->
+        <!--attributes => type, id, name ,value, placeholder, size, maxlength, min, max, step, multiple, accept-->
+
+        <!-- labels and form tag attributes are => for, action, method, autocomplete, enctype-->
+
+      <h3>Demo on checkbox and radio buttons</h3>
+      <label>Journey class:</label><br>
+      <input type="checkbox"><label>AC 1<sup>st</sup> Class</label>
+      <br>
+      <input type="checkbox"><label>AC 2<sup>nd</sup> Class</label>
+      <br>
+      <input type="checkbox"><label>AC 3<sup>rd</sup> Class</label>
+      <br>
+      <input type="checkbox"><label>AC 2<sup>nd</sup> Class</label>
+      <br>
+      <input type="checkbox"><label>Sleeper Class</label>
+      <br>
+      <input type="checkbox"><label>Chair Car</label>
+      <br><br>
+
+
+
+
+
+      <h3>Demo on radio buttons: </h3>
+    <fieldset>
+      <legend>Marital Status:</legend>
+      <input type="radio" name="ms"><label>Single</label>&nbsp; &nbsp;
+      <input type="radio" name="ms"><label>Married</label>&nbsp; &nbsp;
+      <input type="radio" name="ms"><label>Widowed</label>&nbsp; &nbsp;
+      <input type="radio" name="ms"><label>Divorced</label>&nbsp; &nbsp;
+      <input type="radio" name="ms"><label>None</label>&nbsp; &nbsp;
+    </fieldset><br><br>
+
+    <label>Demo on uploading files</label>
+    <form action="uploadfile.php" method="post" enctype="multipart/form-data">
+        <input type="file">
+        <br>
+        <input type="file" multiple>
+        <br>
+        <input type="file" accept=".pdf,.doc">
+        <!--if you want to upload more then one pdf and doc file use multiple in same line so you will be able to upload it-->
+        <br>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    </body>
+</html>

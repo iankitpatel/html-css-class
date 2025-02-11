@@ -1,0 +1,52 @@
+body{
+    background: #FFFFF0;
+}
+header{
+    background: #FBF5DF;
+    
+}
+h1{
+    text-align: center;
+    font-size: 250%;
+    text-shadow: 0 0 5px red;
+}
+nav{
+    background-color: #111;
+    margin-bottom: 15px;
+    color: #FFFFF0;
+    text-align: center;
+}
+/* Child Selector */
+
+nav a{
+    color: #FFFFF0;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    font-size:125% ;
+}
+nav a:hover{
+    background: teal;
+    color: #3300ff;
+
+}
+section{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+}
+footer{
+    background: #000;
+    color: #fff;
+    
+}
+footer div{
+    columns:2 ;
+    padding: 20px;
+}

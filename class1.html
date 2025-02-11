@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body id="b">
+      <form id="f" action="test.php">
+        <h1> demo on email,url,date,time,week,month & color field</h1>
+        <label>Enter Email </label>
+        <input type="email" id="em" name="em">
+        <br>
+        <label>Enter url</label>
+        <input type="url" id="ul" name="ul">
+        <br>
+        <label>select date</label>
+        <input type="date" id="dt" name="dt" min="2000-01-01" max="2013-12-31">
+        <br> 
+        <label>select Time</label>
+        <input type="time" id="tm" name="tm">
+        <br>
+        <label>select week</label>
+        <input type="week" id="w" name="w">
+        <br>
+        <label>select month</label>
+        <input type="month" id="m" name="m">
+        <br>
+        <input type="color" id="c" name="c" onchange="b.style.background=c.value">
+        <br>
+        <!--<input type "submit"> OR-->
+        <button type="submit">Submit</button>
+      </form>
+
+    </body>
+</html>

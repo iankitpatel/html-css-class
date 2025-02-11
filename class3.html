@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Reg Form</title>
+        <style>
+            body{
+
+                background: black;
+            }
+            div{
+                color:white;
+                width: 300px;
+                border-radius: 10px;
+                margin:auto;
+                padding: 10px;
+                box-shadow: 0 0 3px blue;
+            }
+            h2{
+                text-align:center;
+                text-decoration:5px skyblue underline;
+            }
+            div:hover{
+                box-shadow: 0 0 30px green;
+                background:brown;
+
+            }
+            span{
+                color:chartreuse;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h2>Registration Form</h2>
+            <form id="f1" action="success28.html" autocomplete="off">
+                <p>
+                    <label for="fna">Fullname</label><span>*</span><br>
+                    <input type="text" id="fna" name="fna" required autofocus>
+                </p>
+                <p>
+                    <label for="em">EmailID</label><span>*</span><br>
+                    <input type="email" id="em" name="em" required autofocus>
+                </p>
+                <p>
+                    <label for="ph">Contact Number</label><span>*</span><br>
+                    <input type="number" id="ph" name="ph" min="1000000000" max="9999999999" required>
+                </p>
+                <p>
+                    <label for="dob">Date of birth</label><br>
+                    <input type="date" id="dob" name="dob" min="1996-01-01" max="2010-12-21">
+                </p>    
+                <p>
+                    <label>Gender:</label>
+                    <input type="radio" id="g1" name="g" value="f" checked><label for="g1">Female</label> &nbsp;
+                    <input type="radio" id="g2" name="g" value="m"><label for="g2">Male</label> &nbsp;
+                    <input type="radio" id="g3" name="g" value="o"><label for="g3">Others</label> &nbsp;
+                </p>
+                <p>
+                    <label for="course">Which course?</label><br>
+                    <select id="course" name="course">
+                        <option value="jfs">Java Full Stack</option>
+                        <option value="dnfs">.net Full Stack</option>
+                        <option value="uifs">UI Full Stack</option>
+                        <option value="ora">Oracle</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mot">Mode Of Training</label><br>
+                    <select id="mot" name="mot">
+                        <option value="ot">Online Training</option>
+                        <option value="pmt">placement Training</option>
+                        <option value="int">internship Training</option>
+                        <option value="pt">Project Training</option>
+                    </select>
+                </p>
+                <p align="Center">
+                    <input type="checkbox" id="tc" name="tc" value="true" required><label for="tc">I accepted all the terms and conditions</label>
+                </p>
+                <p align="center">
+                    <button type="submit" id="sb" name="sb">Enroll Now</button>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

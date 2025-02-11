@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  p{background: cyan; }   1st applied
+        #i{ background:Pink;}    last applied  
+        .c{background: blue; }  2st applied */
+       
+        p{
+            background: #111;
+            color: #eee;    
+        }
+        #i{
+            Width:50%;
+            text-align: justify;
+        }
+        .c{
+             box-shadow: 5px 5px  hotpink; 
+            border-radius: 10px;
+            box-shadow: 5px 5px 25px red; 
+
+            box-shadow:3px 3px red, 9px 9px blue;     
+        }
+
+        h1{
+            text-shadow:0 0 5px red, 0 0 10px blue, 0 0 15px green; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Demo on CSS precedence (priority) </h3>
+    <p  id="i" class="c">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, possimus! Laborum, aliquid! Error suscipit itaque quisquam voluptatibus pariatur tempore quod facilis culpa laboriosam, incidunt deserunt dolorum qui consequatur alias sunt.</p>
+    <h1>Ankit Patel</h1>
+</body>
+</html>

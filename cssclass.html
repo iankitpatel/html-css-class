@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- psuedo Elements -->
+    <style>
+        h2::before{
+            content:"Hi ";
+        }
+        h2d::after{
+            content:"\1F649";
+        }
+
+        ::placeholder{
+            color: blue;
+            text-align: center;
+        }
+        p::first-letter{
+            Font-size:200%;
+            color:#fff;
+            background: #000;
+        }
+        ::selection{
+            color: red;
+            background-color: yellow;
+        }
+        ::marker{
+            color: rgb(128, 19, 0);
+        }
+        li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Demo on class elements</h3>
+    <h2>Samsung</h2>
+    <h2>Vivo</h2>
+    <h2>Redmi</h2>
+    <input type="text" placeholder="Enter Username"><br>
+    <input type="password" placeholder="Enter Password"><br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, cupiditate, labore corrupti, corporis libero neque officia quas facilis eius fuga deleniti dignissimos minus! Nulla fugit ipsam fugiat quos eius. Perspiciatis.</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis explicabo vel sint et. Aut explicabo illo sapiente, quos iure nemo unde ex, itaque quaerat eaque hic excepturi accusantium culpa.</p>
+    <br>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Bootstrap</li>
+    </ol>
+
+    <ul>
+        <li>Java</li><li>Dot.Net</li><li>Python</li>
+    </ul>
+</body>
+</html>
