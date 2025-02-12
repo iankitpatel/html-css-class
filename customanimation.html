@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--Mapping to tags:
+selector{
+       animation-name: ani-name;
+       animation-duration:Ns;
+       animation-direction:...;
+       animation-delay:...;
+       animation-iteration-count:...;
+}
+-->
+
+<style>
+     /* FIRST METHOD */
+
+    /* @keyframes colorchange
+    {
+        from{background: red;}
+        to{background: blue;}
+    }
+
+    body{
+        animation-name: colorchange;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 10s; */
+
+/* there is a shortcut for this is css we can write all the above thing in a single statment. */
+        /* animation: colorchange 2s infinite alternate 10s ; */
+
+    /* From now we will use the <strongsecond method with pwrcentage use we can see the example below mentioned */
+    /* } */
+    
+    /* SECOND METHOD */
+
+    @keyframes colors
+    {
+        10%{ background: blue;}
+        30%{ background: green;}
+        75%{ background: violet;}
+        100%{ background: yellow;} 
+    }
+
+    body{
+        animation:colors 10s reverse infinite 5s;
+
+    }
+
+</style>
+
+</head>
+<body>
+    <h3>Demo on custom Animation (means animation that we want to create according to our requirement)</h3>
+    
+</body>
+</html>
