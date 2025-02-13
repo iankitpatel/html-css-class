@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @keyframes changeimage
+        {
+            0%{ background-image: url(image/got.jpg);}
+            25%{ background-image: url(image/moneyheist.jpg);}
+            50%{ background-image: url(image/titanic.jpg);}
+            75%{ background-image: url(image/arya.jpg);}
+            100%{ background-image: url(image/the\ Godfather.jpg);}
+        } */
+
+        @keyframes pulses
+        {
+            0%{ transform:scale(1.5);}
+            50%{ 
+                transform: scale(0.5);
+                 opacity: 0.5;  /* 0 means full transparent and 1 is no transparency so we can use 0 to 1 */
+            }
+            100%{ transform: scale(1);}
+        }
+        body{
+            background: black;
+        }
+
+       div{
+            font-size: 100px;
+            animation: pulses 1000ms infinite ;
+            
+        }
+        h1{
+            animation: pulses 1000ms infinite reverse;
+            color: white;
+        }
+
+        /* div{
+            width: 70%;
+            height: 300px;
+            margin: auto;
+            background-size:100% 100%;
+
+            animation:changeimage 15s infinite ;
+
+        } */
+    </style>
+</head>
+<body align="center">
+    <!-- <h2>Demo on Animation.</h2>
+    <div>
+    </div> -->
+    <h1>Pulse Animation</h1>
+    <div>&#x1F496;</div>
+    
+</body>
+</html>

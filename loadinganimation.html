@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @keyframes loading
+    {
+        0%{ top:50px;
+            left:50px;
+         
+        }
+        100%{ transform: rotate(360deg) ;
+            top:50px;
+            left:1000px
+        
+        }
+    }
+
+    div{
+        width: 200px;
+        height: 200px;
+        border: 25px solid blue;
+        border-top: 25px solid cyan;
+        border-radius: 50%;
+        margin: auto;
+        animation: loading 3s infinite linear;
+        position: absolute;
+
+
+        
+    }
+    </style>
+</head> 
+<body align="center">
+    <h1>Loading Animation</h1>
+    <div ></div>
+    <br>
+    
+    
+</body>
+</html>
