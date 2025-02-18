@@ -6,10 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/JavaScript">
-        document.write("msg from head sec");
-    </script>
-
+    <script src="myscript.js"></script>
 </head>
 <body onload="alert('Welcoe to my web site')">
     <!-- <h3>Demo On inline Script</h3>
@@ -19,13 +16,36 @@
 
     <h2 ondblclick="alert('Hey, why did you clicked twise')">click here</h2> -->
 
-    <h3>Demo on internal script</h3>
+    <!-- <h3>Demo on internal script</h3>
     <script type="text/JavaScript">
         document.write("msg from body sec");
     </script>
     <br>
     <script type="text/JavaScript">
-        document.write("msg2 from body ");
+        document.write("msg2 from body "); -->
+
+        <!-- <h2>Demo on Function</h2>
+
+        function fun-name()
+        {
+            statment..
+        } 
+            
+        Calling syn:
+        
+        fun-name()
+        -->
+
+    <h3>demo on internal script</h3>
+    <script>
+        myfun1();
+        // myfun2();
     </script>
+    <br>
+    <button onclick="myfun2()">call fun2 </button>
+
+
+    </script>
+
 </body>
 </html>
