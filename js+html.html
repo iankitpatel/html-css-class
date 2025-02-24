@@ -1,0 +1,63 @@
+<!-- Html with JS implementations -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Finding sum of 2 numbers</h3>
+    <label for="firstnum">first number</label><br>
+    <input type="text" id="firstnum"><br>
+    <label for="secnum">second number</label><br>
+    <input type="text" id="secnum"><br>
+    <button onclick=" addition()">Addition</button>
+    <br>
+    <output id="op"></output>
+    <script>
+        // function defination
+        function addition() 
+        {
+            let x,y,res;    //local vars
+            // dala collection
+            x=+firstnum.value;
+            y=+secnum.value;
+            res=x+y;
+            // document.write("Sum is ",res);
+
+            // alert("sum is "+res); or
+            // console.log("sum is"+res); or
+            op.value="sum  is "+res;
+
+
+            
+        }
+
+    </script>
+
+    <div align="center">
+        <h2>Arithmatic calc</h2>
+        <input type="text" id="fn" placeholder="First Number">
+        <br>
+        <input type="text" id="sn" placeholder="Second Number">
+        <br>
+        <input type="text" id="res" placeholder="result" readonly>
+        <br>
+        <button onclick="res.value=+fn.value + +sn.value">+</button>
+
+        <button onclick="res.value=-fn.value - sn.value">-</button>
+
+        <button onclick="res.value= fn.value * sn.value  ">*</button>
+
+        <button onclick="res.value=fn.value  /sn.value  ">/</button>
+
+        <button onclick="res.value=fn.value % sn.value  ">%</button>
+
+        <button onclick="res.value=fn.value ^ sn.value  ">^</button>
+
+    </div>
+    
+</body>
+</html>

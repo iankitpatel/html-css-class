@@ -1,0 +1,132 @@
+<!-- Parsing 
+ ==> Changing the data from string format to number format
+ 
+ Types: 
+ 1. Implicit(auto)
+    while working with -,*, /, %, ++, --, ** 
+2.  Explicit(manual)
+    other then the above list requires manual parsing
+    1. using function
+       parseInt() ==> data from string format to int format
+       syn: window.parseInt(value)
+            ex: "10" => 10
+                "20.56" => 20
+                "sam" => NaN
+      parseFloat() ==> data from string format to floating format
+      syn:  window.parseFloat(value)
+            ex:  "20.56" => 20.56
+            
+    2. using operator
+       => + is parse operator
+       => ots unary operator, it should be used as prefix
+       syn: +"value"
+         ex: +"10" => 10
+             +"20.56" => 20.56
+             "ram" => NaN-->
+
+
+
+
+<!-- Example on operators -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo on operators </h3>
+    <script>
+        let x=17, y=5;
+
+        // arithmatic ope +,-, *, / , %, **
+        document.write(x+y, '<br>');
+        document.write(x-y, '<br>');
+        document.write(x*y, '<br>');
+        document.write(x/y, '<br>');
+        document.write(x%y, '<br>');
+        document.write(x**y, '<br>');
+
+        // Relational Operators >, <, >=, <=, ==, !=, ===, !== 
+        document.write(x>y, '<br>');
+        document.write(x<y, '<br>');
+        document.write(x>=y, '<br>');
+        document.write(x<=y, '<br>');
+        document.write(x==y, '<br>');
+        document.write(x!=y, '<br>');
+        document.write(x===y, '<br>');
+        document.write(x!==y, '<br>');
+
+        // logical operator &&  ||   !
+        document.write(x>=0 && x<=10, '<br>');
+        document.write(!(y<0), '<br>');
+
+        // Assignment Operator +=, -+, /=, *=, %=, **=, 
+
+        x+=10;    
+        y*=15;
+        document.write(x, '<br>',y,'<br>');
+
+        // concate operator + adding strings
+
+        document.write("rama"+"rao"+"<br>");
+        document.write(100+"mangos"+"<br>");
+        document.write(4+true+"<br>");
+
+        // increment operator ++           ++var (pre)         var++ (post)    
+        // decrement operators --          --var (pre)         var-- (post)
+
+        ++x;
+        document.write(x, '<br>');
+        x++;
+        document.write(x, '<br>');
+
+        // let res=10*++x;
+        document.write(x,'<br>',res,'<br>');
+
+        // conditional operator  ?:
+                 cond ? statement1 : statment2
+        document.write(y%2==0 ? "Even Number" : "Odd number");
+        
+        document.write(10-20%3+15*2,"<br>");
+        document.write(10+20%5-100*30,"<br>");d
+
+    </script>
+
+    <script>
+        let p=18, q=7;
+        document.write("sub is "+ p+q +'<br>');
+        document.write("sub is "+ (p+q) +'<br>');
+        document.write("sub is ",p+q,'<br>');
+
+        document.write("sub is "+p-q+'<br>'); //NaN
+        document.write("sub is "+(p-q)+'<br>'); 
+        document.write("sub is "+p-q+'<br>'); 
+
+        document.write("product is "+p*q+'<br>'); 
+    </script>
+
+    <!-- Parsing examples -->
+     <script>
+        let a="25", b="15";
+
+        document.write(a-b,'<br>');
+        document.write(a*b,'<br>');
+        document.write(a/b,'<br>');
+        document.write(a%b,'<br>');
+        document.write(++a,'<br>');
+        document.write(--a,'<br>');
+        document.write("5"**"4",'<br>');
+
+        let i="12" , j="7";
+        // manual parse
+        let res = window.parseInt(i)+window.parseInt(j);
+        document.write(res,'<br>');
+        document.write(+i > +j,'<br>');
+        document.write( +i <= +j, '<br>');
+
+     </script>
+    
+</body>
+</html>
