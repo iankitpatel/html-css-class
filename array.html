@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>String interpolation.</h3>
+    <script>
+        let x="ecma";
+        document.write(n ,"<br>");
+        document.write($, {x} `<br>`);
+        document.write(`${x} <br>`);
+        document.write("sum is 10+20 <br>");
+        document.write(`sum is ${10+20}<br>`);
+        document.write(`res is ${15>26}<br>`);
+
+        let t=10;
+        for(i=1;i<=10;i++){
+            document.write(` ${t} * ${i} = ${t*i}<br>`);
+        }
+
+        let st=`Hi ${x}`;
+        document.write(`${st} <br>`);
+    </script>  -->
+
+    
+    <!-- <script>
+        <h3>Demo on array literals.</h3>
+         let a=[];  //array declaration
+         document.write(`size ${a.length}<br>`);  
+         document.write(`array ${a}<br>`); 
+         
+         a[0]=10;
+         a[1]=20;
+         a[2]=34;
+         document.write(`size ${a.length}<br>`);  
+         document.write(`array ${a}<br>`); 
+
+         let b=[10,20,30,40,50];
+         document.write(`size ${b.length}<br>`);  
+         document.write(`array ${b}<br>`); 
+
+        //  sorting different types of value.
+
+        let c=['siva', 43, true,5.10, new Date()];
+        document.write(`A =>${a}<br>`);
+
+        // constant array
+        const d=[10,20,30];
+        document.write(`B => ${b}<br>`);
+        // b=[11,22,33]; errore
+
+        // Dynamic array
+        const f=[11,22,33,44,55,66,77,88,99];
+        document.write(`f => ${f}<br>`);
+        f.length=5;
+        document.write(`f => ${f}<br>`);
+        f.length=7;
+        c[5]=101;
+        c[6]=202;
+        document.write(`f => ${f}<br>`);
+        f.length=0;
+    </script>  -->
+
+    <h3>Demo on nested array.</h3>
+    <script>
+        const a=[
+                  [10,20,30],
+                  [11,22,33],
+                ];
+
+        document.write(`A ${a}<br>`);
+        document.write(`${a.length}<br>`);
+        document.write(`${a[0].length}<br>`);
+        document.write(`${a[1].length}<br>`);
+
+        for(let i=0;i<a[i];i++)
+    {
+        for(let j=0;j<a[i].length;j++)
+           document.write(`${a[i][j]} &nbsp;`);
+
+        document.write(`<br>`);
+
+    }
+
+    console.table(a);
+        
+    </script>
+  
+
+    
+</body>
+</html>
