@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Spread operator
+ 
+>  "..." is unary operator, we should use this operator as prefix.
+>  its apread operator.
+>  the spread operator represents all remaining values/so on values.
+>  this we can use in array & collections.
+   Syn:       ...array     <== spread
+              ...collection <== spread
+-->
+
+</head>
+<body>
+    <h2>Demo on spread operator</h2>
+
+    <script>
+        const a=[11,22,33];
+        let b=[...a];  //it copy element
+        // b=a; //it copy ref
+        document.write(`A ${a}<br>`);
+        document.write(`B ${b}<br>`);
+
+        const ft=['html', 'css', 'js'];
+        const bt=['java', 'dot.net','python'];
+        const db=['oracle', 'mysql'];
+
+        const all=[...ft, ...bt, ...db];
+        document.write(`${all}<br>`); //arrays merge
+
+        const x=[...ft, 'bs', ...bt, 'php']; //array merge
+        document.write(`${x}<br>`);
+
+    </script>
+        
+    <h2>Demo on array destructuring</h2>
+    <script>
+        const c=[11,22,33];
+        // let p=c[0], q=c[1], r=c[2];  //or
+        let [p,q,r]=c; //destructuring
+
+        document.write(`c ${p}<br>q ${q}<br>r ${r}<br>`);
+
+        let eles=['html', 'css', 'js','bs','ajax', 'angular', 'react'];
+
+        let[i,j,k]=eles;
+
+        document.write(`i ${i}<br>j ${j}<br>k ${k}<br>`);
+
+        [p,q,r] = [11,22,33]
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!--For In loop Example adn it is a JS new feature from Ecma concept -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- For in loop
+     
+    for (temp-var in array/coll)
+    {
+        step temp-var
+    }
+        > we can't use array with in for in loop
+        > for in loop supports to manipulate array
+        > its value based loop
+        
+    For of loop
+    
+    for (temp-var of array/coll)
+    {
+        step temp-var
+    }
+        > we can't use array with for for in loop
+        > for in loop supports to manipulate array
+        > its value based loop-->
+
+
+</head>
+<body>
+    <h3>demo on for in loop</h3>
+    <script>
+        const a=[10,20,30,77];
+
+        for (let i in a){
+            document.write(`${i} => ${a[i]}<br>`);
+        }
+    </script>
+    <h3>demo on for of loop</h3>
+    <script>
+        const b=[11,22,33,44,55,66,77];
+
+        for (let e of b)
+        document.write(`${e}<br>`);
+
+        let str="welcome";
+
+        for(let c of str)
+        document.write(`${c}<br>`);
+
+    </script>
+   
+</body>
+</html>
