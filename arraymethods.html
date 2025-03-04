@@ -1,0 +1,115 @@
+<!-- Example of array methods -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Demo on array methods</h2>
+    <script>
+        const eles=[];
+
+        // push - it is used to insert the element the data in array.
+        // eles.push(10);
+        // eles.push(20);
+        // eles.push(30);
+        // let c=eles.push(40);
+
+        // document.write(`eles ${eles}<br>`);
+        // document.write(`${c}<br>`);
+
+        // pop - it is used to remove  or retrive the element from the array.
+        // let x=eles.pop();
+        // document.write(`1st pop ${x}<br>`);
+        // document.write(`2nd pop ${eles.pop()}<br>`);
+        // document.write(`eles  ${eles}<br>`);
+
+        // eles.push(11);
+        // eles.push(22);
+        // eles.push(33);
+        // document.write(`eles  ${eles}<br>`);
+
+        // unshift and shift method - unshiift method is used to insert the element in array but it start from last and like first element would be 40 then 30 and so on.
+        // in shift method the element from array is removed and it will remove from first position. 
+
+        eles.unshift(10);
+        eles.unshift(20);
+        eles.unshift(30);
+        let d=eles.unshift(40);
+
+        document.write(`eles ${eles}<br>`);
+        document.write(`${d}<br>`);
+
+
+        let y=eles.shift();
+        document.write(`1st pop ${y}<br>`);
+        document.write(`2nd pop ${eles.shift()}<br>`);
+        document.write(`eles  ${eles}<br>`);
+    </script>
+
+    <script>
+        const ele=[10,20,30,40,50,30,60,70,80,30,90,30];
+        let str="notepad plus plus";
+
+        document.write(`Eles => ${ele}<br>`);
+        document.write(`str => ${str}<br>`);
+
+        // includes() - it is used to search the data
+
+        document.write(`20 found ${ele.includes(20)}<br>`);
+        document.write(`55 found ${ele.includes(55)}<br>`);
+        document.write(`${str.includes("pad")}<br>`);
+        document.write(`${str.includes("this")}<br>`);
+
+        // indexof()  ind, -1, 1st occurance in simple way 
+
+        document.write(`30@  ${ele.indexOf(30)}<br>`);
+        document.write(`30@  ${ele.indexOf(30,6)}<br>`);
+
+        document.write(`p@  ${ele.indexOf('p')}<br>`);
+        document.write(`p@  ${ele.indexOf('p',5)}<br>`);
+
+        document.write(`44  @${ele.indexOf(44)}<br>`);
+        document.write(`z@  ${ele.indexOf("z")}<br>`);
+
+        // lastindexOf() it simply gives the last index of element 
+
+        document.write(`30 last @ ${ele.lastIndexOf(30)}<br>`);
+        document.write(`p last@  ${str.lastIndexOf('p')}<br>`);
+
+        // reverse()
+
+        ele.reverse();
+        document.write(`res elements ${ele}<br>`);
+
+        // sort - it sort the array in ascending order.
+        ele.sort();
+        document.write(`sort ele   ${ele}<br>`);
+
+        const names=['rama','ramana','Raman','ramakrish','Ramaraj','ramakanth','ramanaidu'];
+        names.sort();
+        document.write(`sort names => ${names}<br>`);
+
+        // join()
+
+        document.write(`${ele.join("@")}<br>`);
+
+    </script>
+
+    <script>
+        const el=[10,20,30,40,50,60,70,80,90];
+
+        // let a1=el.slice(st-ind,end-ind);
+        let a1=el.slice(0,5);  //5-1
+        let a2=el.slice(5,9);
+
+        document.write(`a1 ${a1}<br>`);
+        document.write(`a2 ${a2}<br>`);
+
+    </script>
+    
+</body>
+</html>
