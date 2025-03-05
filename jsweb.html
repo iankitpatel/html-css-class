@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="tb" placeholder="Enter a number">
+    <br>
+    <button onclick="addElement()">Add element</button>
+    <button onclick="display()">View Element</button>
+    <button onclick="clear()">clear</button>
+    <br>
+    <span>Elements:</span><br>
+    <output id="op"></output>
+    
+    <script>
+        const eles=[];
+
+        function addElement()
+        {
+            eles.push(tb.value);
+            tb.value="";
+            tb.focus();
+
+        }
+
+        function display()
+        {
+            op.value=eles;
+        }
+
+        function clear()
+        {
+            eles.length=0;
+            op.value="";       
+        }
+
+    </script>
+
+
+</body>
+</html>
