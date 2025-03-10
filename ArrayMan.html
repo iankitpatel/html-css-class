@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=prompt('Enter String');
+console.log("String length is :"+str.length);
+
+    </script>
+    <script>
+
+        let str=prompt('Enter String');
+        for(let i=str.length-1; i>=0; i--)
+        {
+            document.writeln(str[i]);
+        }
+        
+        </script>
+    <script>
+let c=0;
+let str=prompt('Enter String');
+str = str.split("");
+for(let i=0;i<str.length; i++)
+{
+    // if(str[i]>='A' && str[i]<='Z') str+=32;
+    if(str[i]>='A' && str[i]<='Z') str[i] = str[i].toLowerCase();
+
+    if(str[i]>='a' && str[i]<='z'){
+        if(str[i]==='a' || str[i]==='e' || str[i]==='i' || str[i]==='o' || str[i]==='u')
+        c++;
+    } 
+}
+if(c!=0){
+    document.write("this string contains vowels.");
+}
+else{
+    document.write("this string does not contain any vowels");
+}
+</script>
+
+<script>
+    let c=0;
+    let str=prompt('Enter String');
+    str = str.split("");
+    for(let i=0;i<str.length; i++)
+    {
+        // if(str[i]>='A' && str[i]<='Z') str+=32;
+        if(str[i]>='A' && str[i]<='Z') str[i] = str[i].toLowerCase();
+    
+        if(str[i]>='a' && str[i]<='z'){
+            if(str[i]==='a' || str[i]==='e' || str[i]==='i' || str[i]==='o' || str[i]==='u')
+            c++;
+        } 
+    }
+    if(c!=0){
+        document.write("this string contains vowels.");
+    }
+    else{
+        document.write("this string does not contain any vowels");
+    }
+    </script>
+    
+</body>
+</html>
